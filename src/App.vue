@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <CharacterImage/>
+    <CharacterBasicInfo/>
+    <CharacterDetailedInfo/>
   </div>
 </template>
 
