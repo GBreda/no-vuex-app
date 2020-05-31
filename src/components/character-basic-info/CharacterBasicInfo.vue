@@ -1,8 +1,11 @@
 <template>
     <div>
-        <p>{{ info.name }}</p>
-        <p>{{ info.status }}</p>
-        <p>{{ info.gender }}</p>
+        <span>Basic info: </span>
+        <a-card class="card">
+            <p><strong>Name: </strong>{{ info.name }}</p>
+            <p><strong>Status: </strong>{{ info.status }}</p>
+            <p><strong>Gender: </strong>{{ info.gender }}</p>
+        </a-card>
     </div>
 </template>
 

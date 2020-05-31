@@ -21,11 +21,21 @@ export default {
             detailedInfo: {
                 specie: '',
                 location: '',
-            }
+            },
+            disabled: false,
         }
     },
     mounted() {
-        axios.get('https://rickandmortyapi.com/api/character/1')
+        this.getCharacter();
+    },
+    methods: {
+        randomNumber() {
+            return Math.round((Math.random() * 100));
+        },
+        getCharacter() {
+            this.disabled = true;
+            const characterID = this.randomNumber();
+            axios.get(`https://rickandmortyapi.com/api/character/${characterID}`)
             .then(response => {
                 const { data } = response;
                 this.imageURL = data.image;
@@ -35,6 +45,11 @@ export default {
                 this.detailedInfo.specie = data.species;
                 this.detailedInfo.location = data.location.name;
             })
-            .catch(error => console.log(error));
+            .catch(error => console.log(error))
+            .finally(() => this.disabled = false);
+        },
+        changeCharacter() {
+            this.getCharacter();
+        }
     }
 }

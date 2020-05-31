@@ -1,7 +1,10 @@
 <template>
-    <div>
-        <p>{{ detailedInfo.specie }}</p>
-        <p>{{ detailedInfo.location }}</p>
+    <div class="card">
+        <span>Detailed info: </span>
+        <a-card>
+            <p><strong>Specie: </strong>{{ detailedInfo.specie }}</p>
+            <p><strong>Location: </strong>{{ detailedInfo.location }}</p>
+        </a-card>
     </div>
 </template>
 
