@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <CharacterImage/>
-    <CharacterBasicInfo/>
-    <CharacterDetailedInfo/>
+    <CharacterImage :url=imageURL />
+    <CharacterBasicInfo :info=basicInfo />
+    <CharacterDetailedInfo :detailedInfo=detailedInfo />
   </div>
 </template>
 

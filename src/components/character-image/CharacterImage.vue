@@ -1,5 +1,5 @@
 <template>
-    <p>image</p>
+    <img :src=url alt="Character image">
 </template>
 
 <script src="./character-image.js"></script>

@@ -1,5 +1,8 @@
 <template>
-    <p>detailed info</p>
+    <div>
+        <p>{{ detailedInfo.specie }}</p>
+        <p>{{ detailedInfo.location }}</p>
+    </div>
 </template>
 
 <script src="./character-detailed-info.js"></script>

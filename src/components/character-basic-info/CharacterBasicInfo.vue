@@ -1,5 +1,9 @@
 <template>
-    <p>basic info</p>
+    <div>
+        <p>{{ info.name }}</p>
+        <p>{{ info.status }}</p>
+        <p>{{ info.gender }}</p>
+    </div>
 </template>
 
 <script src="./character-basic-info.js"></script>
