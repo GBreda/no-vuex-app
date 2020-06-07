@@ -1,6 +1,7 @@
 import CharacterImage from './components/character-image/CharacterImage.vue';
 import CharacterBasicInfo from './components/character-basic-info/CharacterBasicInfo.vue';
 import CharacterDetailedInfo from './components/character-detailed-info/CharacterDetailedInfo.vue';
+import ChangeButton from './components/change-button/change-button.vue';
 import axios from 'axios';
 
 export default {
@@ -8,7 +9,8 @@ export default {
     components: {
         CharacterImage,
         CharacterBasicInfo,
-        CharacterDetailedInfo
+        CharacterDetailedInfo,
+        ChangeButton,
     },
     data() {
         return {
@@ -50,6 +52,6 @@ export default {
         },
         changeCharacter() {
             this.getCharacter();
-        }
+        },
     }
 }

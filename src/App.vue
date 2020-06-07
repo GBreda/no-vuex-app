@@ -4,7 +4,7 @@
     <div>
       <CharacterBasicInfo :info=basicInfo />
       <CharacterDetailedInfo :detailedInfo=detailedInfo />
-      <a-button size="large" class="button" type="primary" @click=changeCharacter :disabled=disabled>Get a random character</a-button>
+      <ChangeButton v-on:changeCharacter="changeCharacter" :disabled=disabled></ChangeButton>
     </div>
   </div>
 </template>
